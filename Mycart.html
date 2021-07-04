@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- material ui-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+  <title>Cosmetics</title>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <div class="col-md-12 col-12 mx-auto">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <figure class="logo">
+            <img src="Images/logo.jpg" alt="logo" />
+          </figure>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto ms-auto mb-2 mt-4 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">
+                    HOME
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Shop.html">
+                    SHOP
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="Perfumes.html"> PERFUMES </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Nailpolish.html"> NAILPOLISH </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Lipsticks.html"> LIPSTICKS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Details&Gallery.html">
+                    DETAILS & GALLERY
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Brands.html"> BRANDS </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Mycart.html"> MY CART </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </div>
+  </div>
+  <!-- mycart -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <header>
+          <div class="continue-shopping">
+            <a href="Shop.html">
+              <img src="Images/backarrow.png" alt="back" class="arrow-icon" />
+            </a>
+            <h3>continue shopping</h3>
+          </div>
+          <div class="cart-icon">
+            <img src="Images/cart.png" alt="cart" />
+          </div>
+        </header>
+
+        <section class="main-cart-section">
+          <h1 class="text-center">shopping cart</h1>
+          <p class="total-items text-center">
+            you have <span class="total-items-count">7</span> items in
+            shopping cart
+          </p>
+          <div class="cart-items">
+            <div class="cart-items-container">
+
+              <div class="items-info ">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+              <div class="items-info">
+                <div class="product-img">
+                  <img src="Images/categories1.jpg" alt="product" />
+                </div>
+
+                <div class="title">
+                  <h2>Perfume</h2>
+                  <p>for men</p>
+                </div>
+
+                <div class="add-minus-quantity">
+                  <i class="fa fa-minus minus" aria-hidden="true"></i>
+                  <input type="text" placeholder="1" />
+                  <i class="fa fa-plus add" aria-hidden="true"></i>
+                </div>
+
+                <div class="price">
+                  <h3>RS.2000</h3>
+                </div>
+
+                <div class="remove-item">
+                  <i class="fa fa-trash-alt remove" aria-hidden="true" onClick={remove}></i>
+                </div>
+              </div>
+              <hr />
+
+            </div>
+          </div>
+
+          <div class="card-total">
+            <h3>
+              Cart Total: <span>RS. 23000</span>
+            </h3>
+            <button>checkout</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="bg-dark text-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+            atque ea quis molestias. Fugiat pariatur maxime quis culpa
+            corporis vitae repudiandae aliquam voluptatem veniam, est atque
+            cumque eum delectus sint!
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="index.html" class="text-white">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 2
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 3
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 4
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">
+                Link 1
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 2
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 3
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">
+                Link 4
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3">
+      <p>© 2021 Copyright:</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
